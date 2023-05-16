@@ -1,11 +1,16 @@
 module.exports = [
   "strapi::errors",
   "strapi::security",
+  "strapi::cors",
   {
     name: "strapi::cors",
     config: {
-      enabled: false,
-      origin: ["*"], //allow all
+      enabled: true,
+      origin: [
+        "https://cwk-startup.onrender.com",
+        "localhost:1338",
+        "http://localhost:1338",
+      ], //allow all
       headers: ["*"], //allow all headers
     },
   },
@@ -28,7 +33,7 @@ module.exports = [
             "data:",
             "blob:",
             "dl.airtable.com",
-            "s3.eu-central-1.amazonaws.com",
+            "https://cwk-startup.onrender.com",
             "localhost:1338",
           ],
           "media-src": [
@@ -36,7 +41,7 @@ module.exports = [
             "data:",
             "blob:",
             "dl.airtable.com",
-            "s3.eu-central-1.amazonaws.com",
+            "https://cwk-startup.onrender.com",
           ],
           upgradeInsecureRequests: null,
         },
