@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "businesses",
+  "info": {
+    "singularName": "business",
+    "pluralName": "businesses",
+    "displayName": "business"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "email": {
+      "type": "email"
+    },
+    "website": {
+      "type": "string"
+    },
+    "github_repo": {
+      "type": "string"
+    },
+    "featuredImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "icon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.icon"
+    },
+    "address": {
+      "type": "string"
+    },
+    "location_address": {
+      "type": "string"
+    },
+    "social": {
+      "displayName": "social_networks",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social-networks"
+    },
+    "contact": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact.contact",
+      "inversedBy": "business"
+    },
+    "slogan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::slogan.slogan",
+      "inversedBy": "business"
+    },
+    "google_map_location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::google-map-location.google-map-location",
+      "inversedBy": "business"
+    }
+  }
+}

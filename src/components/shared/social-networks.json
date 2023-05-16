@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_social_networks",
+  "info": {
+    "displayName": "social_networks",
+    "icon": "people-carry"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.icon"
+    }
+  }
+}

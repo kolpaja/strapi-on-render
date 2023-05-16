@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "google_map_locations",
+  "info": {
+    "singularName": "google-map-location",
+    "pluralName": "google-map-locations",
+    "displayName": "google_map_location"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "iframe_string": {
+      "type": "text"
+    },
+    "business": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::business.business",
+      "inversedBy": "google_map_location"
+    }
+  }
+}

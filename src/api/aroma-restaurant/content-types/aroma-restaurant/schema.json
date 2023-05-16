@@ -1,0 +1,105 @@
+{
+  "kind": "singleType",
+  "collectionName": "aroma_restaurants",
+  "info": {
+    "singularName": "aroma-restaurant",
+    "pluralName": "aroma-restaurants",
+    "displayName": "Aroma_Restaurant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "text"
+    },
+    "startedServing": {
+      "type": "date"
+    },
+    "business": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::business.business"
+    },
+    "contact": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact.contact"
+    },
+    "restaurant_services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "restaurant_menus": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::restaurant-menu.restaurant-menu"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial"
+    },
+    "social_networks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social-networks"
+    },
+    "icon": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.icon"
+    },
+    "slogans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::slogan.slogan"
+    },
+    "hero_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "featured_video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "featured_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "carousel_imgs": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "google_map_location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::google-map-location.google-map-location"
+    }
+  }
+}

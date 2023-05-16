@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_icons",
+  "info": {
+    "displayName": "icon",
+    "icon": "expand"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "delivery",
+        "dineIn",
+        "takeAwayFood"
+      ]
+    }
+  }
+}
