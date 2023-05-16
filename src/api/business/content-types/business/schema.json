@@ -54,23 +54,29 @@
       "repeatable": true,
       "component": "shared.social-networks"
     },
-    "contact": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::contact.contact",
-      "inversedBy": "business"
-    },
-    "slogan": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::slogan.slogan",
-      "inversedBy": "business"
-    },
     "google_map_location": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::google-map-location.google-map-location",
       "inversedBy": "business"
+    },
+    "contacts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact.contact",
+      "mappedBy": "business"
+    },
+    "slogans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::slogan.slogan",
+      "mappedBy": "business"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial",
+      "mappedBy": "business"
     }
   }
 }

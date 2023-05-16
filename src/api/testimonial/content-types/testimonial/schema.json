@@ -4,22 +4,59 @@
   "info": {
     "singularName": "testimonial",
     "pluralName": "testimonials",
-    "displayName": "testimonial"
+    "displayName": "testimonial",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "subtitle": {
-      "type": "string"
-    },
     "slug": {
       "type": "uid",
-      "targetField": "title"
+      "targetField": "name"
+    },
+    "business": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::business.business",
+      "inversedBy": "testimonials"
+    },
+    "link": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "unique": true,
+      "min": 1
+    },
+    "card_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "rating": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "max": 10
+    },
+    "isComment": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "comment": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    },
+    "name_link": {
+      "type": "string"
     }
   }
 }

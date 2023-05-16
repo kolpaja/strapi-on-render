@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contact",
     "pluralName": "contacts",
-    "displayName": "contact"
+    "displayName": "contact",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,9 +20,9 @@
     },
     "business": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::business.business",
-      "inversedBy": "contact"
+      "inversedBy": "contacts"
     },
     "icon": {
       "type": "component",
@@ -33,7 +34,8 @@
       "enum": [
         "external",
         "phone",
-        "whatsApp"
+        "whatsApp",
+        "mail"
       ]
     }
   }

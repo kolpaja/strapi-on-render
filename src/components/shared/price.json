@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_prices",
+  "info": {
+    "displayName": "price",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "amount": {
+      "type": "decimal"
+    },
+    "currencies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::currency.currency"
+    }
+  }
+}
