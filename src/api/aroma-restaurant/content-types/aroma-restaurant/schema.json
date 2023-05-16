@@ -15,9 +15,6 @@
     "name": {
       "type": "string"
     },
-    "desc": {
-      "type": "richtext"
-    },
     "description": {
       "type": "text"
     },
@@ -29,9 +26,9 @@
       "relation": "oneToOne",
       "target": "api::business.business"
     },
-    "contact": {
+    "contacts": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::contact.contact"
     },
     "restaurant_services": {
@@ -53,11 +50,6 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.social-networks"
-    },
-    "icon": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.icon"
     },
     "slogans": {
       "type": "relation",
@@ -100,6 +92,19 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::google-map-location.google-map-location"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "about": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::about.about"
     }
   }
 }

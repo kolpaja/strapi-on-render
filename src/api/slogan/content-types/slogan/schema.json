@@ -4,7 +4,8 @@
   "info": {
     "singularName": "slogan",
     "pluralName": "slogans",
-    "displayName": "slogan"
+    "displayName": "slogan",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,9 +24,9 @@
     },
     "business": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::business.business",
-      "inversedBy": "slogan"
+      "inversedBy": "slogans"
     }
   }
 }

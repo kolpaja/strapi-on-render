@@ -4,7 +4,8 @@
   "info": {
     "singularName": "restaurant-menu",
     "pluralName": "restaurant-menus",
-    "displayName": "restaurant_menu"
+    "displayName": "restaurant_menu",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,10 +22,49 @@
       "type": "uid",
       "targetField": "name"
     },
-    "business": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::business.business"
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "starters",
+        "bread",
+        "steaks",
+        "sauces",
+        "rissotto",
+        "pizza",
+        "al_forne",
+        "chicken_dishes",
+        "pasta",
+        "pesce",
+        "side_orders"
+      ]
+    },
+    "card_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "order": {
+      "type": "integer",
+      "min": 1,
+      "unique": true
+    },
+    "price": {
+      "displayName": "price",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.price"
+    },
+    "ingredients": {
+      "type": "string"
+    },
+    "preparation_method": {
+      "type": "string"
+    },
+    "portion": {
+      "type": "string"
     }
   }
 }

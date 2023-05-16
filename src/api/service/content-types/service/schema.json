@@ -21,6 +21,19 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "card_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "order": {
+      "type": "integer",
+      "unique": true,
+      "min": 1
     }
   }
 }
