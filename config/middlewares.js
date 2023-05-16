@@ -6,12 +6,8 @@ module.exports = [
     name: "strapi::cors",
     config: {
       enabled: true,
-      origin: [
-        "https://cwk-startup.onrender.com",
-        "localhost:1338",
-        "http://localhost:1338",
-      ], //allow all
-      headers: ["*"], //allow all headers
+      header: "*",
+      origin: ["*"],
     },
   },
   "strapi::poweredBy",
