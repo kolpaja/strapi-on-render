@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "linktrees",
+  "info": {
+    "singularName": "linktree",
+    "pluralName": "linktrees",
+    "displayName": "linktree"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "links_tree": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.link"
+      ]
+    },
+    "backgroundImage": {
+      "type": "string",
+      "default": "linear-gradient(to right, #8360c3, #2ebf91",
+      "required": true
+    }
+  }
+}

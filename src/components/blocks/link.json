@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_blocks_links",
+  "info": {
+    "displayName": "link",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "href": {
+      "type": "string"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_self",
+        "_blank",
+        "_parent"
+      ]
+    },
+    "isDownload": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "downloadRef": {
+      "type": "string"
+    }
+  }
+}
