@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_faqs",
+  "info": {
+    "displayName": "faq",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "text"
+    },
+    "external_link": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "min": 0
+    }
+  }
+}

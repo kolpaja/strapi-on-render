@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_business_contacts",
+  "info": {
+    "displayName": "contact",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "phone",
+        "email",
+        "whatsapp",
+        "other"
+      ]
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

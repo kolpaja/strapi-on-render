@@ -4,7 +4,8 @@
   "info": {
     "singularName": "google-map-location",
     "pluralName": "google-map-locations",
-    "displayName": "google_map_location"
+    "displayName": "google_map_location",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,7 +22,13 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::business.business",
-      "inversedBy": "google_map_location"
+      "mappedBy": "google_map_location"
+    },
+    "coordinates": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
     }
   }
 }

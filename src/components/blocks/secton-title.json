@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_blocks_secton_titles",
+  "info": {
+    "displayName": "secton_title",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "hasDivider": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.link"
+    }
+  }
+}

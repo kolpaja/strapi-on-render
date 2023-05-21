@@ -2,7 +2,8 @@
   "collectionName": "components_shared_prices",
   "info": {
     "displayName": "price",
-    "icon": "ad"
+    "icon": "ad",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,6 +14,16 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::currency.currency"
+    },
+    "isDiscountedPrice": {
+      "type": "boolean",
+      "default": false
+    },
+    "discounted_amount": {
+      "type": "decimal"
+    },
+    "percentage_badge": {
+      "type": "string"
     }
   }
 }

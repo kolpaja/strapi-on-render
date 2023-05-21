@@ -16,12 +16,6 @@
       "type": "uid",
       "targetField": "name"
     },
-    "business": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::business.business",
-      "inversedBy": "testimonials"
-    },
     "link": {
       "type": "string"
     },

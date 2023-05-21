@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_business_testimonial_items",
+  "info": {
+    "displayName": "testimonial_item",
+    "icon": "angry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "comment": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "tripadvisor",
+        "facebook",
+        "instagram",
+        "tik-tok",
+        "in-restaurant",
+        "google-maps"
+      ]
+    },
+    "comment_link": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer",
+      "min": 1,
+      "max": 10,
+      "default": 10
+    },
+    "avatar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.avatar"
+    },
+    "order": {
+      "type": "integer",
+      "min": 0
+    }
+  }
+}

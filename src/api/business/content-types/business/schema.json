@@ -4,7 +4,8 @@
   "info": {
     "singularName": "business",
     "pluralName": "businesses",
-    "displayName": "business"
+    "displayName": "business",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -31,11 +32,12 @@
       "type": "string"
     },
     "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "icon": {
       "type": "component",
@@ -59,24 +61,6 @@
       "relation": "oneToOne",
       "target": "api::google-map-location.google-map-location",
       "inversedBy": "business"
-    },
-    "contacts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::contact.contact",
-      "mappedBy": "business"
-    },
-    "slogans": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::slogan.slogan",
-      "mappedBy": "business"
-    },
-    "testimonials": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::testimonial.testimonial",
-      "mappedBy": "business"
     }
   }
 }
