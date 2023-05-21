@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_blocks_avatars",
+  "info": {
+    "displayName": "avatar",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "profile_img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "profile_link": {
+      "type": "string"
+    }
+  }
+}

@@ -31,30 +31,10 @@
       "relation": "oneToMany",
       "target": "api::contact.contact"
     },
-    "restaurant_services": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::service.service"
-    },
-    "restaurant_menus": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::restaurant-menu.restaurant-menu"
-    },
-    "testimonials": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::testimonial.testimonial"
-    },
     "social_networks": {
       "type": "component",
       "repeatable": true,
       "component": "shared.social-networks"
-    },
-    "slogans": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::slogan.slogan"
     },
     "hero_img": {
       "type": "media",
@@ -105,6 +85,100 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::about.about"
+    },
+    "FAQ": {
+      "displayName": "faq",
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.faq"
+    },
+    "faq_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.secton-title"
+    },
+    "feature_video_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.secton-title"
+    },
+    "menu_items_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.secton-title"
+    },
+    "menu_items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "restaurant.menu-item"
+    },
+    "slogans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "business.slogan"
+    },
+    "our_story_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.secton-title"
+    },
+    "our_story_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "testimonials_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.secton-title"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "business.testimonial-item"
+    },
+    "our_strength": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.secton-title"
+    },
+    "services_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.secton-title"
+    },
+    "service_item": {
+      "displayName": "service",
+      "type": "component",
+      "repeatable": true,
+      "component": "business.service"
+    },
+    "open_hours": {
+      "type": "string"
+    },
+    "special_dish_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.secton-title"
+    },
+    "special_dish_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "winter_open_hours": {
+      "type": "string"
+    },
+    "featured_meals_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.secton-title"
     }
   }
 }

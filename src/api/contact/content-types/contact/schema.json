@@ -18,12 +18,6 @@
     "value": {
       "type": "text"
     },
-    "business": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::business.business",
-      "inversedBy": "contacts"
-    },
     "icon": {
       "type": "component",
       "repeatable": false,

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_business_slogans",
+  "info": {
+    "displayName": "slogan",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "slogan": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "isAvailable": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "cta_links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.link"
+    }
+  }
+}
