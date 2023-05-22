@@ -4,7 +4,7 @@
   "info": {
     "singularName": "aroma-restaurant",
     "pluralName": "aroma-restaurants",
-    "displayName": "Aroma_Restaurant",
+    "displayName": "Aroma Restaurant",
     "description": ""
   },
   "options": {
@@ -26,23 +26,10 @@
       "relation": "oneToOne",
       "target": "api::business.business"
     },
-    "contacts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::contact.contact"
-    },
     "social_networks": {
       "type": "component",
       "repeatable": true,
       "component": "shared.social-networks"
-    },
-    "hero_img": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
     },
     "featured_video": {
       "type": "media",
@@ -156,9 +143,6 @@
       "repeatable": true,
       "component": "business.service"
     },
-    "open_hours": {
-      "type": "string"
-    },
     "special_dish_title": {
       "type": "component",
       "repeatable": false,
@@ -172,13 +156,27 @@
         "images"
       ]
     },
-    "winter_open_hours": {
-      "type": "string"
-    },
     "featured_meals_title": {
       "type": "component",
       "repeatable": false,
       "component": "blocks.secton-title"
+    },
+    "hero": {
+      "displayName": "hero",
+      "type": "component",
+      "repeatable": true,
+      "component": "business.hero"
+    },
+    "open_hours": {
+      "displayName": "open-hours",
+      "type": "component",
+      "repeatable": false,
+      "component": "business.open-hours"
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": true,
+      "component": "business.contact"
     }
   }
 }
