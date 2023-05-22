@@ -1,9 +1,8 @@
 {
-  "collectionName": "components_blocks_secton_titles",
+  "collectionName": "components_blocks_contents",
   "info": {
-    "displayName": "secton title",
-    "icon": "align-center",
-    "description": ""
+    "displayName": "content",
+    "icon": "align-left"
   },
   "options": {},
   "attributes": {
@@ -14,17 +13,18 @@
       "type": "string"
     },
     "description": {
-      "type": "text"
+      "type": "string"
     },
     "hasDivider": {
       "type": "boolean",
       "default": true,
       "required": true
     },
-    "cta": {
-      "type": "component",
-      "repeatable": false,
-      "component": "blocks.link"
+    "cta_title": {
+      "type": "string"
+    },
+    "cta_href": {
+      "type": "string"
     }
   }
 }

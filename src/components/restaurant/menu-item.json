@@ -70,10 +70,10 @@
       "default": false,
       "required": true
     },
-    "best_menu_item": {
-      "type": "component",
-      "repeatable": false,
-      "component": "blocks.secton-title"
+    "isSpecialDish": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

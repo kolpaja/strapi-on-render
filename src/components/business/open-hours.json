@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_business_open_hours",
+  "info": {
+    "displayName": "open-hours",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "default": {
+      "type": "string"
+    },
+    "summer": {
+      "type": "string"
+    },
+    "winter": {
+      "type": "string"
+    }
+  }
+}
