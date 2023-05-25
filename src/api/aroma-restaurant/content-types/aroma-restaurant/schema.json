@@ -177,6 +177,16 @@
       "type": "component",
       "repeatable": true,
       "component": "business.contact"
+    },
+    "we_offer_service": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.secton-title"
+    },
+    "we_offer_service_item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "business.service"
     }
   }
 }

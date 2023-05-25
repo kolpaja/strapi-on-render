@@ -1,7 +1,7 @@
 {
   "collectionName": "components_restaurant_menu_items",
   "info": {
-    "displayName": "menu_item",
+    "displayName": "Menu Item",
     "icon": "archive",
     "description": ""
   },
@@ -29,17 +29,20 @@
     "category": {
       "type": "enumeration",
       "enum": [
-        "starters",
-        "bread",
-        "steaks",
-        "sauces",
-        "rissotto",
-        "pizza",
         "al_forne",
+        "bread",
         "chicken_dishes",
+        "drinks",
+        "other",
         "pasta",
         "pesce",
-        "side_orders"
+        "pizza",
+        "rissotto",
+        "sauces",
+        "side_orders",
+        "starters",
+        "steaks",
+        "sweets"
       ]
     },
     "preparation_method": {
@@ -74,6 +77,9 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "recipie": {
+      "type": "richtext"
     }
   }
 }
