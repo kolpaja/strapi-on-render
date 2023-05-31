@@ -62,7 +62,7 @@
     },
     "card_img": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images"
@@ -73,13 +73,19 @@
       "default": false,
       "required": true
     },
-    "isSpecialDish": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
     "recipie": {
       "type": "richtext"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "badge": {
+      "type": "string"
     }
   }
 }

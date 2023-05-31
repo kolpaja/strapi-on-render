@@ -21,10 +21,23 @@
       "default": true,
       "required": true
     },
-    "cta": {
+    "instagram_ref": {
+      "type": "string"
+    },
+    "facebook_ref": {
+      "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "price": {
       "type": "component",
       "repeatable": false,
-      "component": "blocks.link"
+      "component": "shared.price"
     }
   }
 }

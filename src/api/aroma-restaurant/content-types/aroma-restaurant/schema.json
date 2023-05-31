@@ -148,14 +148,6 @@
       "repeatable": false,
       "component": "blocks.secton-title"
     },
-    "special_dish_img": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "featured_meals_title": {
       "type": "component",
       "repeatable": false,
